@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stellar Odyssey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <header>
+        <h1>🚀 Stellar Odyssey</h1>
+        <p>Visualizing Physics Through Code</p>
+    </header>
+
+    <section class="controls">
+
+        <h2>Launch Parameters</h2>
+
+        <input
+            type="number"
+            id="velocity"
+            placeholder="Velocity (m/s)"
+        >
+
+        <input
+            type="number"
+            id="angle"
+            placeholder="Angle (degrees)"
+        >
+
+        <button id="launchBtn">
+            Launch
+        </button>
+
+    </section>
+
+    <section class="results">
+
+        <h2>Results</h2>
+
+        <p id="height">
+            Maximum Height: --
+        </p>
+
+        <p id="time">
+            Time of Flight: --
+        </p>
+
+        <p id="range">
+            Range: --
+        </p>
+
+    </section>
+
+    <section class="trajectory">
+
+        <h2>Trajectory Visualization</h2>
+
+        <canvas
+            id="trajectoryCanvas"
+            width="800"
+            height="400">
+        </canvas>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
