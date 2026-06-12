@@ -1,6 +1,6 @@
 🚀 Stellar Odyssey
 
-«Built to visualize the physics I once solved on paper — bringing velocity, gravity, and trajectories to life through code.»
+Built to visualize the physics I once solved on paper — bringing velocity, gravity, and trajectories to life through code.
 
 🌌 About
 
