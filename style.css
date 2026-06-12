@@ -1,1 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body{
+    min-height:100vh;
+
+    background:
+    radial-gradient(
+        circle at top,
+        #1a2740 0%,
+        #0b1120 40%,
+        #05070d 70%,
+        #000000 100%
+    );
+
+    color:white;
+
+    font-family:'Segoe UI', sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+.container{
+    width:100%;
+    max-width:1000px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:
+    0 0 30px rgba(0,0,0,0.4),
+    0 0 50px rgba(91,134,229,0.15);
+}
+
+h1{
+    font-size:3rem;
+    text-align:center;
+
+    margin-bottom:10px;
+
+    color:#ffffff;
+
+    text-shadow:
+    0 0 15px rgba(91,134,229,0.6);
+}
+
+.subtitle{
+    text-align:center;
+
+    color:#d0d0d0;
+
+    margin-bottom:35px;
+
+    font-size:1.1rem;
+}
+
+h2{
+    margin-top:30px;
+    margin-bottom:15px;
+
+    color:#ffffff;
+}
+
+.controls{
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:25px;
+}
+
+input{
+    flex:1;
+
+    min-width:220px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,0.12);
+
+    color:white;
+
+    font-size:16px;
+
+    outline:none;
+}
+
+input::placeholder{
+    color:#cfcfcf;
+}
+
+button{
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #5b86e5,
+        #36d1dc
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 0 20px rgba(91,134,229,0.7);
+}
+
+.results{
+    margin-top:25px;
+
+    padding:20px;
+
+    background:rgba(255,255,255,0.05);
+
+    border-radius:15px;
+}
+
+.results p{
+    margin:12px 0;
+
+    font-size:1.1rem;
+
+    color:#f2f2f2;
+}
+
+.trajectory{
+    margin-top:30px;
+}
+
+canvas{
+    width:100%;
+
+    height:400px;
+
+    margin-top:15px;
+
+    border-radius:15px;
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    background:rgba(255,255,255,0.04);
+}
+
+footer{
+    text-align:center;
+
+    margin-top:30px;
+
+    color:#cccccc;
+}
+
+@media(max-width:768px){
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:2.2rem;
+    }
+
+    .controls{
+        flex-direction:column;
+    }
+
+    button{
+        width:100%;
+    }
+}
