@@ -1,4 +1,5 @@
 function launchRocket() {
+    console.log("Button clicked");}
 
     let velocity =
     Number(document.getElementById("velocity").value);
